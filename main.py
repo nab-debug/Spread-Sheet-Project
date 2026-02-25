@@ -36,7 +36,7 @@ with tab2:
 
     show_button = st.button("Show Total")
     if show_button:
-        with open("payment.txt", "r") as file:
+        with open("payment.txt", "a") as file:
             for line in file:
                 numbers = line.split()
                 balance_list.append(numbers[0])
